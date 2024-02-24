@@ -1,93 +1,68 @@
 {
-  "formatVersion" : 1,
-  "passTypeIdentifier" : "pass.com.joeugalde.okonite-card",
-  "serialNumber" : "8j23fm3",
-  "teamIdentifier" : "7QAM3LGSSC",
-  "locations" : [
-    {
-      "longitude" : -122.3748889,
-      "latitude" : 37.6189722
-    },
-    {
-      "longitude" : -122.03118,
-      "latitude" : 37.33182
-    }
-  ],
-  "barcode" : {
-    "message" : "123456789",
-    "format" : "PKBarcodeFormatPDF417",
-    "messageEncoding" : "iso-8859-1"
+  "description": "Contact Card for Joe Ugalde",
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.com.joeugalde.okonite-card",
+  "serialNumber": "6969669",
+  "teamIdentifier": "7QAM3LGSSC",
+  "barcode": {
+    "message": "https://www.linkedin.com/in/jtugalde/",
+    "format": "PKBarcodeFormatQR",
+    "messageEncoding": "iso-8859-1",
+    "altText": "Joe's LinkedIn"
   },
-  "organizationName" : "Toy Town",
-  "description" : "Toy Town Membership",
-  "logoText" : "Toy Town",
-  "foregroundColor" : "rgb(255, 255, 255)",
-  "backgroundColor" : "rgb(197, 31, 31)",
-  "generic" : {
-    "primaryFields" : [
+  "organizationName": "The Okonite Company",
+  "logoText": "Contact Card",
+  "foregroundColor": "rgb(0,0,0)",
+  "backgroundColor": "rgb(255,255,255)",
+  
+  "generic": {
+    "primaryFields": [
       {
-        "key" : "member",
-        "value" : "Johnny Appleseed"
+        "key": "whoami",
+        "label": "whoami",
+        "value": "Joe Ugalde"
       }
     ],
-    "secondaryFields" : [
+    "secondaryFields": [
       {
-        "key" : "subtitle",
-        "label" : "MEMBER SINCE",
-        "value" : "2012"
+        "key": "job",
+        "label": "Production Analyst",
+        "value": "The Okonite Company"
       }
     ],
-    "auxiliaryFields" : [
+    "auxiliaryFields": [
       {
-        "key" : "level",
-        "label" : "LEVEL",
-        "value" : "Platinum"
+        "key": "cellfront",
+        "dataDetectorType": "PKDataDetectorTypePhoneNumber",
+        "label": "Cell",
+        "value": "+17324922693"
       },
       {
-        "key" : "favorite",
-        "label" : "FAVORITE TOY",
-        "value" : "Bucky Ball Magnets",
-        "textAlignment" : "PKTextAlignmentRight"
+        "key": "workmailfront",
+        "label": "EMAIL",
+        "value": "j.ugalde@okonite.com",
+        "textAlignment": "PKTextAlignmentRight"
       }
     ],
-    "backFields" : [
+    "backFields": [
+      
       {
-        "numberStyle" : "PKNumberStyleSpellOut",
-        "label" : "spelled out",
-        "key" : "numberStyle",
-        "value" : 200
+        "key": "cellback",
+        "dataDetectorType": "PKDataDetectorTypePhoneNumber",
+        "label": "Cell",
+        "value": "+17324922693"
       },
       {
-        "label" : "in Reals",
-        "key" : "currency",
-        "value" : 200,
-        "currencyCode" : "BRL"
+        "key": "workmailback",
+        "label": "Workmail",
+        "attributedValue": "<a href='mailto:j.ugalde@okonite.com'>j.ugalde@okonite.com</a>",
+        "dataDetectorType": "PKDataDetectorTypeLink"
       },
       {
-        "dateStyle" : "PKDateStyleFull",
-        "label" : "full date",
-        "key" : "dateFull",
-        "value" : "1980-05-07T10:00-05:00"
-      },
-      {
-        "label" : "full time",
-        "key" : "timeFull",
-        "value" : "1980-05-07T10:00-05:00",
-        "timeStyle" : "PKDateStyleFull"
-      },
-      {
-        "dateStyle" : "PKDateStyleShort",
-        "label" : "short date and time",
-        "key" : "dateTime",
-        "value" : "1980-05-07T10:00-05:00",
-        "timeStyle" : "PKDateStyleShort"
-      },
-      {
-        "dateStyle" : "PKDateStyleShort",
-        "label" : "relative date",
-        "key" : "relStyle",
-        "value" : "2013-04-24T10:00-05:00",
-        "isRelative" : true
+        "key": "joegithub",
+        "label": "Joe's GitHub",
+        "attributedValue": "<a href='https://github.com/thinkula'>thinkula</a>",
+        "dataDetectorType": "PKDataDetectorTypeLink"
       }
     ]
   }
